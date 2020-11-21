@@ -26,15 +26,21 @@ canvas {
 
 .text {
   color: #eee;
-  position: absolute;
-  top: 0;
+  background-color: rgba(255, 255, 255, 0.02);
+
   width: 200px;
   height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+}
+
+.text:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .wrap {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: 1px solid antiquewhite;
 }

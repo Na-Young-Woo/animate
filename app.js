@@ -35,8 +35,10 @@ class App {
   }
 
   // 실제로 구동되는 애니메이션
-  Animate(t) {
+  animate(t) {
     window.requestAnimationFrame(this.animate.bind(this));
+
+    this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight);
 
     this.ball.draw(this.ctx, this.stageWidth, this.stageHeight);
   }

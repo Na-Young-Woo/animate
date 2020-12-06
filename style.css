@@ -24,23 +24,25 @@ canvas {
   height: 100%;
 }
 
-.text {
+.wrap {
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  height: 100vh;
+  top: 50%;
+  margin-top: -100px;
   color: #eee;
   background-color: rgba(255, 255, 255, 0.02);
-
   width: 200px;
   height: 200px;
-  position: absolute;
   border-radius: 50%;
   text-align: center;
-  line-height: 200px;
+}
+
+.text-box {
+  margin-top: 80px;
 }
 
 .text:hover {
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.wrap {
-  display: flex;
-  justify-content: center;
 }
